@@ -2,13 +2,8 @@ name: Generate Snake Game
 
 on:
   schedule:
-    # Tự động chạy lại vào 00:00 UTC mỗi ngày
     - cron: "0 0 * * *"
-  
-  # Cho phép bấm chạy thủ công bằng tay bất kỳ lúc nào
   workflow_dispatch:
-  
-  # Chạy mỗi khi bạn push code lên nhánh main
   push:
     branches:
       - main
@@ -21,7 +16,6 @@ jobs:
     timeout-minutes: 5
     
     steps:
-      # Bước 1: Tạo ảnh động rắn ăn commit từ contribution graph
       - name: Generate github-contribution-grid-snake.svg
         uses: Platane/snk/svg-only@v3
         with:
@@ -30,9 +24,8 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      # Bước 2: Đẩy file svg vào nhánh 'output'
       - name: Push github-contribution-grid-snake.svg to the output branch
-        uses: crazy-max/ghaction-github-pages@v3.5.0
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
