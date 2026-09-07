@@ -83,6 +83,6 @@ I am a student majoring in Software Engineering at UTE University <img src="http
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nguyenvankhanh2010/nguyenvankhanh2010/output/github-contribution-grid-snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/nguyenvankhanh2010/nguyenvankhanh2010/output/github-contribution-grid-snake.svg">
-    <img alt="GitHub Snake Animation" src="https://raw.githubusercontent.com/nguyenvankhanh2010/nguyenvankhanh2010/output/github-contribution-grid-snake.svg">
+    <img alt="GitHub Snake Animation" width="100%" src="https://raw.githubusercontent.com/nguyenvankhanh2010/nguyenvankhanh2010/output/github-contribution-grid-snake.svg">
   </picture>
 </p>
